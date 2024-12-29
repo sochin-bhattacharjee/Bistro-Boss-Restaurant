@@ -9,14 +9,12 @@ import slide2 from "../../../assets/home/slide2.jpg";
 import slide3 from "../../../assets/home/slide3.jpg";
 import slide4 from "../../../assets/home/slide4.jpg";
 import slide5 from "../../../assets/home/slide5.jpg";
+import SectionTittle from "../../../Components/SectionTittle/SectionTittle";
 const Category = () => {
   return (
     <div className="my-16">
         <div>
-            <h1 className="text-yellow-500">---From 11:00am to 10:00pm---</h1>
-            <hr className="w-2/4 mx-auto mb-2 mt-2" />
-            <h1 className="text-3xl">Order Online</h1>
-            <hr className="w-2/4 mx-auto mb-8 mt-2" />
+        <SectionTittle subHeading="---From 11.00 am to 10.00 pm---" heading="Order Online"></SectionTittle>
         </div>
       <div>
         <Swiper
