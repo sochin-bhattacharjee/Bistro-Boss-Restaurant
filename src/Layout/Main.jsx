@@ -5,7 +5,7 @@ import Navbar from '../pages/shared/Navbar/Navbar';
 
 const Main = () => {
     return (
-        <div className="flex flex-col min-h-screen">
+        <div className="flex flex-col w-full min-h-screen">
             <Navbar></Navbar>
             <div className='flex-grow'>
             <Outlet></Outlet>
