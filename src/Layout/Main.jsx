@@ -5,9 +5,9 @@ import Navbar from '../pages/shared/Navbar/Navbar';
 
 const Main = () => {
     return (
-        <div>
+        <div className="flex flex-col min-h-screen">
             <Navbar></Navbar>
-            <div>
+            <div className='flex-grow'>
             <Outlet></Outlet>
             </div>
             <Footer></Footer>
