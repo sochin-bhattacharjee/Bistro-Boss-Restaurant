@@ -1,0 +1,5 @@
+.feature-item{
+    background-image: url('../../../assets/home/featured.jpg');
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.692);
+}
