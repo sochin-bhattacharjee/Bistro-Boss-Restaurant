@@ -1,10 +1,11 @@
 import React from "react";
-
+import logo from "../../../assets/logo.png";
+import { NavLink } from "react-router-dom";
 const Navbar = () => {
   const navOptions = (
     <>
       <li>
-        <a>Home</a>
+        <NavLink to="/" className={({ isActive }) => (isActive ? "border-b-2 rounded-br-xl p-1" : "text-white p-1")}>Home</NavLink>
       </li>
       <li>
         <a>Contact Us</a>
@@ -13,7 +14,7 @@ const Navbar = () => {
         <a>Dashboard</a>
       </li>
       <li>
-        <a>Our Menu</a>
+        <NavLink to="/menu" className={({ isActive }) => (isActive ? "border-b-2 rounded-br-xl p-1" : "text-white p-1")}>Our Menu</NavLink>
       </li>
       <li>
         <a>Our Shop</a>
@@ -48,11 +49,11 @@ const Navbar = () => {
             {navOptions}
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl">Bistro Boss</a>
+        <a className="btn btn-ghost text-xl flex items-center"><img className="w-10" src={logo} alt="" /> Bistro Boss</a>
       </div>
-      <div className="navbar-end">
+      <div className="navbar-end flex gap-3">
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">{navOptions}</ul>
+          <ul className="flex items-center gap-3 px-1">{navOptions}</ul>
         </div>
         <a className="btn">Button</a>
       </div>

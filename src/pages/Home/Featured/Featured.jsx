@@ -24,7 +24,7 @@ const Featured = () => {
               adipisicing elit. Quisquam, quae.
             </p>
             <button className="btn btn-outline border-0 border-b-4 border-white text-white">
-              Order Now
+              View Full Menu
             </button>
           </div>
         </div>
