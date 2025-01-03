@@ -17,7 +17,7 @@ const Navbar = () => {
         <NavLink to="/menu" className={({ isActive }) => (isActive ? "border-b-2 rounded-br-xl p-1" : "text-white p-1")}>Our Menu</NavLink>
       </li>
       <li>
-        <a>Our Shop</a>
+        <NavLink to="/order" className={({ isActive }) => (isActive ? "border-b-2 rounded-br-xl p-1" : "text-white p-1")}>Our Shop</NavLink>
       </li>
     </>
   );

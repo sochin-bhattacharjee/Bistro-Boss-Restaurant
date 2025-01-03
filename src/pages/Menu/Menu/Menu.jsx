@@ -1,4 +1,3 @@
-import React from "react";
 import { Helmet } from "react-helmet";
 import Cover from "../../shared/Cover/Cover";
 import useMenu from "../../../hooks/useMenu";
@@ -39,34 +38,37 @@ const Menu = () => {
           subHeading="Don't miss"
           heading="Today's Dessert"
         ></SectionTittle>
-        <MenuCategory items={dessert}>
+        <MenuCategory items={dessert} tittle={"dessert"}>
         </MenuCategory>
       </div>
+
       <div className="mt-10 flex flex-col gap-5">
         <Cover img={pizzaImg} tittle="Today's Pizza"></Cover>
         <SectionTittle
           subHeading="Don't miss"
           heading="Today's Pizza"
         ></SectionTittle>
-        <MenuCategory items={pizza}>
+        <MenuCategory items={pizza} tittle={"pizza"}>
         </MenuCategory>
       </div>
+      
       <div className="mt-10 flex flex-col gap-5">
         <Cover img={soupImg} tittle="Today's Soup"></Cover>
         <SectionTittle
           subHeading="Don't miss"
           heading="Today's Soup"
         ></SectionTittle>
-        <MenuCategory items={soup}>
+        <MenuCategory items={soup} tittle={"soup"}>
         </MenuCategory>
       </div>
+
       <div className="mt-10 flex flex-col gap-5">
         <Cover img={saladImg} tittle="Today's Salad"></Cover>
         <SectionTittle
           subHeading="Don't miss"
           heading="Today's Salad"
         ></SectionTittle>
-        <MenuCategory items={salad}>
+        <MenuCategory items={salad} tittle={"salad"}>
         </MenuCategory>
       </div>
     </div>

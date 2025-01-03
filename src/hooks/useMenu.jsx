@@ -1,15 +1,22 @@
 import { useEffect, useState } from "react";
+import useAxiosSecure from "./useAxiosSecure/useAxiosSecure";
 
 const useMenu = () => {
     const [menu, setMenu] = useState([]);
+    const axiosSecure = useAxiosSecure();
     const [loading, setLoading] = useState(true);
         useEffect(() => {
-            fetch('menu.json')
-            .then(res => res.json())
-            .then(data => {
-                setMenu(data)
-                setLoading(false)
-            })
+            const getMenu = async () => {
+                try {
+                    const response = await axiosSecure.get('/menu');
+                    setMenu(response.data);
+                } catch (error) {
+                    console.log(error);
+                }finally {
+                    setLoading(false);
+                }
+            }
+            getMenu();
         } , [])
         return [menu , loading]
 }
